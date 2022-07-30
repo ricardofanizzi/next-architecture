@@ -8,6 +8,7 @@
     "yarn": ">=1.22.0"
   },
   "scripts": {
+    "init": "npm install && npm run prepare",
     "dev": "cross-env NODE_OPTIONS='--inspect' next dev",
     "build": "next build",
     "start": "next start",
