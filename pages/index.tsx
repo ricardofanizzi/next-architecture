@@ -1,23 +1,13 @@
-import type { NextPage } from 'next';
-import Head from 'next/head';
+import Layout from '../components/layout/Layout';
+import styles from '../styles/Home.module.scss';
+import { NextPageWithLayout } from './page';
 
-const Home: NextPage = () => {
-  return (
-    <>
-      <Head>
-        <title>My web</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+const Home: NextPageWithLayout = () => {
+  return <section className={styles.main}></section>;
+};
 
-      <header></header>
-
-      <main>
-        <h1>Hello my new applcation</h1>
-      </main>
-
-      <footer></footer>
-    </>
-  );
+Home.getLayout = (page) => {
+  return <Layout>{page}</Layout>;
 };
 
 export default Home;
