@@ -3,7 +3,7 @@ import styles from '../app/styles/Home.module.scss';
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
-  return <section className={styles.main}>asdfasdf </section>;
+  return <section className={styles.main}></section>;
 };
 
 Home.getLayout = (page) => {
