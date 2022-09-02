@@ -1,5 +1,5 @@
 import Layout from '../app/components/layout/Layout';
-import styles from '../app/styles/Home.module.scss';
+import styles from '../styles/Home.module.scss';
 import { NextPageWithLayout } from './page';
 
 const Home: NextPageWithLayout = () => {
